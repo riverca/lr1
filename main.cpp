@@ -1,7 +1,7 @@
 #include "ComplexNumber.h"
 #include <iostream>
 #include <assert.h>
-#define TEST_1
+#define TEST_2
 int main() {
 #ifdef TEST_1
 	ComplexNumber c1;
@@ -11,7 +11,7 @@ int main() {
 #endif
 #ifdef TEST_2
 	ComplexNumber c2(3, 5.5);
-	assert(c2.getImaginary() == 5.5 && "Failed attempt to initialize an imaginary part");
+	assert(c2.getImaginary() == 5.6 && "Failed attempt to initialize an imaginary part");
 	assert(c2.getReal() == 3 && "Failed attempt to initialize a real part");
 	std::cout << "Initializing constructor works correctly";
 #endif
